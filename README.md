@@ -34,3 +34,21 @@ Note: Items will be managed using Azure DevOps (CRM Assets Tool)
 ## Agile methodology and sprint role
 
 ![](images/agile.png) 
+
+*Sprint Cycle Manager (“Scrum Master”) – CRM Assets Resource*
+- Coordinates resources during the sprint
+- Ensures the methodology respect
+- Lead the meetings
+
+*Business Analyst – CRM Assets Resource*
+- Animates analysis workshops and build backlog according to the product owner requests
+- Is key reference for the project team
+
+*Product Owner – RENT 21 Resource*
+- Makes the link between the project team and the business line
+- Provide all required elements that must be collected near the business line
+- Validates the deliveries (testing sessions results review & approval)
+
+*Project Team Members – CRM Assets Resources*
+- Delivers the backlog items
+- Package the solution and deploy it in the environments
