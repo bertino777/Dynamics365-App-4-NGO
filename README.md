@@ -30,3 +30,6 @@ Alpha uses a basic version of Insightly which was deployed in 2013 with a single
 2. Delivery teams will take in charge the items across sprints (from READY to DONE)
 3. Items will be grouped by topics. When a topic is full done, we would not come back on it (except via a new official demand)
 Note: Items will be managed using Azure DevOps (CRM Assets Tool)
+
+## Agile methodology and sprint role
+
