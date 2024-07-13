@@ -124,3 +124,7 @@ Dynamics 365 Sales Application on 3 environments (DEV, UAT and PROD)
 ## Timeframe
 
 ![](images/time.png) 
+
+## Design view
+
+**_ ALM_**
