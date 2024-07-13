@@ -33,4 +33,4 @@ Note: Items will be managed using Azure DevOps (CRM Assets Tool)
 
 ## Agile methodology and sprint role
 
-![](images/methodology.png) 
+![](images/agile.png) 
