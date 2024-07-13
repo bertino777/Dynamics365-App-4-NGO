@@ -128,7 +128,7 @@ Dynamics 365 Sales Application on 3 environments (DEV, UAT and PROD)
 # Data Modeling
 *Click on the icon to see the Data Modeling*
 
-[<img alt ="Design view" width="px" height="60px" src="images/data_modeling.png" />](https://github.com/bertino777/Dynamics365-App-4-NGO/blob/main/DesignView.md)
+[<img alt ="Design view" width="px" height="60px" src="images/data_modeling.png" />](https://github.com/bertino777/Dynamics365-App-4-NGO/blob/main/DataModeling.md)
 
 # Design view
 *Click on the icon to see the Design view*
