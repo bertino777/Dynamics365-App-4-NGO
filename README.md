@@ -1,4 +1,4 @@
-# Fundraising and Engagement App for NGO
+# Dynamics 365 CRM for NGO
 This is the Repository where all documentation for project implementation of Dynamics 365 for an NGO based in Paris (France) is stored.
 To keep confidentiality closes, the NGO will be called Alpha.
 
@@ -19,6 +19,22 @@ Alpha uses a basic version of Insightly which was deployed in 2013 with a single
 - [x] Identify the steps of each process, including the prerequisites to be validated to move to the next step in the CRM.
 - [x] Identify related cross-functional needs if applicable: mail synchronization, MailChimp, Zoom synchronization, alert settings.
 - [x] Identify the KPIs and dashboards required to the operational management of activities on the one hand and reporting (for decision-makers).
+
+## Project Team
+|Alpha NGO| CRM Assets Consulting|
+| --------| ---------------------|
+|Alpha Team Members| CRM AssetsTeam Members|
+| -------------------------------|
+|Assistant Project Manager : Ayu |Business Analyst: Yvon|
+|IT / Processes/Product Owner: Thomas|Technical Analyst: Valentin|
+|Community Engagement & Partnership: Vibhu| Architect & PM: Fabrice|
+|Digital Media: Jessica / Shiyao | Integration Developer: Yvon|
+|Strategic Communication: Yasmine|Extra resources from the CRM Assets staff if needed|
+|Knowledge & Data : Nathalie||
+|Fundraising & Institutional : Rana||
+|Administrative & Office Manager: Stephanie||
+|Membership & Institutional Parnership: Laura||
+
 
 ## Methodology & Organization
 
@@ -44,7 +60,7 @@ Note: Items will be managed using Azure DevOps (CRM Assets Tool)
 - Animates analysis workshops and build backlog according to the product owner requests
 - Is key reference for the project team
 
-*Product Owner – RENT 21 Resource*
+*Product Owner – Alpha Resource*
 - Makes the link between the project team and the business line
 - Provide all required elements that must be collected near the business line
 - Validates the deliveries (testing sessions results review & approval)
