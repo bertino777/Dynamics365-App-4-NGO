@@ -123,4 +123,4 @@ Dynamics 365 Sales Application on 3 environments (DEV, UAT and PROD)
 
 ## Timeframe
 
-![](time/agile.png) 
+![](images/time.png) 
