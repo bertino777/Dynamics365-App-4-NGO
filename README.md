@@ -52,3 +52,29 @@ Note: Items will be managed using Azure DevOps (CRM Assets Tool)
 *Project Team Members – CRM Assets Resources*
 - Delivers the backlog items
 - Package the solution and deploy it in the environments
+
+## Defintion of ready and definition of done
+
+A task is considered as READY state when the following conditions are met: 
+- Detailed analysis is done and documented
+- The analysis has been reviewed and approved by the Product Owner
+- All required information, document or support from the business have been received and reviewed by the Business Analyst
+- When a task is READY, it can go into a Sprint backlog
+
+A task is considered as DONE state when the following conditions are met: 
+- Item is delivered/developed 
+- Item is deployed in Test environment and ready to be deployed
+- When a task is DONE, it can go out of the sprint.
+
+Note: Acceptance testing as well as deployment tasks will be considered as Sprint tasks as well
+
+## Team organization and meetings
+
+1. A SteerCo will be scheduled 
+- At the beginning of the project 
+- A backlog refinement at the beginning of a sprint cycle
+- A sprint review at the end of a sprint cycle 
+
+2. 2-weekly meetings will receive the participation of all involved actors of the running Sprint (+/- 15mn )
+
+3. Analysis meeting, for application or technical analysis
