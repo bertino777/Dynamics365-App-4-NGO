@@ -27,13 +27,13 @@ Alpha uses a basic version of Insightly which was deployed in 2013 with a single
 | -------------------------------|
 |Assistant Project Manager : Ayu |Business Analyst: Yvon|
 |IT / Processes/Product Owner: Thomas|Technical Analyst: Valentin|
-|Community Engagement & Partnership: Vibhu| Architect & PM: Fabrice|
-|Digital Media: Jessica / Shiyao | Integration Developer: Yvon|
+|Community Engagement & Partnership: Vijay| Architect & PM: Fabrice|
+|Digital Media: Kelly / Sandra | Integration Developer: Yvon|
 |Strategic Communication: Yasmine|Extra resources from the CRM Assets staff if needed|
 |Knowledge & Data : Nathalie||
-|Fundraising & Institutional : Rana||
-|Administrative & Office Manager: Stephanie||
-|Membership & Institutional Parnership: Laura||
+|Fundraising & Institutional : Sophia||
+|Administrative & Office Manager: Stephane||
+|Membership & Institutional Parnership: Laure||
 
 
 ## Methodology & Organization
@@ -100,17 +100,17 @@ Note: Acceptance testing as well as deployment tasks will be considered as Sprin
 | Main tasks | Date | Resp | Paticipants | Status |
 | ---------- | ---- |------|-------------|--------|
 |Purchase the Sales Licenses with the NGO Discounts|09/09/2022|Thomas||TO DO|
-|Functional Workshop - Constituant / Contacts|09/09/2022|Yvon/Fabrice|Vibu/Ayu/Thomas|TO DO|
-|Functional Workshop - Fundraising|09/09/2022|Yvon/Fabrice|Rana/Thomas|TO DO|
-|Functional Workshop - Knowledge (Report production)|09/09/2022|Yvon/Fabrice|Nathalie/Ayu/Thomas|TO DO|
-|Functional Workshop - Campaign/Events/Target List/Activities/Surveys|09/09/2022|Yvon/Fabrice|Vibu/Ayu/Thomas|TO DO|
-|Functional Workshop - Security Model (roles, teams, bu)|09/09/2022|Yvon/Fabrice|Vibu/Ayu/Thomas|TO DO|
-|Functional Workshop - Data Migration (data mapping)|09/09/2022|Yvon/Fabrice|Vibu/Ayu/Thomas|TO DO|
-|Technical Workshop Integration|20/09/2022|Yvon/Fabrice|Jessica/Shiayo|TO DO|
+|Functional Workshop - Constituant / Contacts|09/09/2022|Yvon/Fabrice|Vijay/Alain/Thomas|TO DO|
+|Functional Workshop - Fundraising|09/09/2022|Yvon/Fabrice|Shiaya/Thomas|TO DO|
+|Functional Workshop - Knowledge (Report production)|09/09/2022|Yvon/Fabrice|Nathalie/Ahmed/David|TO DO|
+|Functional Workshop - Campaign/Events/Target List/Activities/Surveys|09/09/2022|Yvon/Fabrice|Ahmed/David|TO DO|
+|Functional Workshop - Security Model (roles, teams, bu)|09/09/2022|Yvon/Fabrice|Ahmed/David|TO DO|
+|Functional Workshop - Data Migration (data mapping)|09/09/2022|Yvon/Fabrice|Ahmed/David|TO DO|
+|Technical Workshop Integration|20/09/2022|Yvon/Fabrice|Jeff/Shian|TO DO|
 |Create Dynamics 365 Environments (DEV, UAT)|21/09/2022||TO DO|
 |Adapt security model (bu/roles) & Add users|22/09/2022|Yvon/Valentin||TO DO|
 |Adapt default entities and Create custom ones|23/09/2022|Yvon/Valentin||TO DO|
-|Data Migration Dev (Organizations, Contacts, roles etc…)|23/09/2022|Yvon|Vibu/Ayu/Thomas|TO DO|
+|Data Migration Dev (Organizations, Contacts, roles etc…)|23/09/2022|Yvon|Vijah/Jeff/David|TO DO|
 |Dev. Of Integration Packages (Mailchimp, Zoom, etc…)|23/09/2022|Yvon||TO DO|
 |UAT Environment preparation ( application / setup /data)|24/10/2022|Yvon/Fabrice||TO DO|
 |Backlog Document ( functional - entities / security roles)|25/10/2022|Valentin||TO DO|
@@ -118,7 +118,7 @@ Note: Acceptance testing as well as deployment tasks will be considered as Sprin
 |UAT Document test Scenarios - functional aspects|02/11/2022|Yvon/Valentin||TO DO|
 |Accompany Test session|09/09/2022|Yvon/Valentin||TO DO|
 |UAT corrections / Retests|22/11/2022|Yvon/Valentin||TO DO|
-|Deployment Plan to Prod|25/11/2022|Yvon/Fabrice|Vibu/Ayu/Thomas|TO DO|
+|Deployment Plan to Prod|25/11/2022|Yvon/Fabrice|Vijay/Ted/David|TO DO|
 |Prepare End User training|09/09/2022|Yvon||TO DO|
 |Execute Key User training|05/12/2022|Yvon|TO DO|TO DO|
 |GO LIVE|15/12/2022|Yvon/Fabrice/Valentin|Keys users|TO DO|
