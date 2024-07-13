@@ -10,4 +10,6 @@ To keep confidentiality closes, the NGO will be called Alpha.
 - Yearly reports through research and surveys on the status of Renewables’ development
 - Fundraising
 
-REN21 uses a basic version of Insightly which was deployed in 2013 with a single user account. Insightly basic version is lacking in its functionality in Contact Management, Activity and Event management, Marketing and Campaign Management, Metric and Reporting causing a desinterest from REN21 to use Insightly. Insightly is used as an address book where team members are doing data entry, data tagging, export the reports requested by management. The lack of understanding what a CRM is for and thorough training on how to use the platform properly is causing poor data entry quality. As result, very few staff members spend time now in Insightly, some never use or open it.
+Alpha uses a basic version of Insightly which was deployed in 2013 with a single user account. Insightly basic version is lacking in its functionality in Contact Management, Activity and Event management, Marketing and Campaign Management, Metric and Reporting causing a desinterest from Alpha to use Insightly. Insightly is used as an address book where team members are doing data entry, data tagging, export the reports requested by management. The lack of understanding what a CRM is for and thorough training on how to use the platform properly is causing poor data entry quality. As result, very few staff members spend time now in Insightly, some never use or open it.
+
+## Description of the target mission
