@@ -1,1 +1,1 @@
-
+# Application LifeCycle management
