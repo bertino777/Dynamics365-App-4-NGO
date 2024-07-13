@@ -78,3 +78,21 @@ Note: Acceptance testing as well as deployment tasks will be considered as Sprin
 2. 2-weekly meetings will receive the participation of all involved actors of the running Sprint (+/- 15mn )
 
 3. Analysis meeting, for application or technical analysis
+
+## Project task and project review
+
+
+## Deliverables
+
+Dynamics 365 Sales Application on 3 environments (DEV, UAT and PROD)
+
+- Sales App, Marketing App, Fundraising & Engagement App, Custom Entities & Business Processes
+- Entity Diagram updated 
+- BPMN updated 
+- Functional / Technical descriptions of the developments 
+- Functional / Technical descriptions of the integrations 
+- Training Manual: Basic & Advanced
+- Import templates for data Migration
+
+## Timeframe
+
