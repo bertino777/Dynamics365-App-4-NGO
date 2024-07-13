@@ -128,4 +128,4 @@ Dynamics 365 Sales Application on 3 environments (DEV, UAT and PROD)
 ## Design view
 
 **_ ALM_**
-[<img alt ="ALM" width="px" height="60px" src="images/alm_icon.png" />]()
+[<img alt ="ALM" width="px" height="60px" src="images/alm_icon.png" />](https://github.com/bertino777/Dynamics365-App-4-NGO/blob/main/ALM.md)
