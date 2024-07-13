@@ -126,9 +126,11 @@ Dynamics 365 Sales Application on 3 environments (DEV, UAT and PROD)
 ![](images/time.png) 
 
 # Design view
-*Click below to see the Design view*
-[<img alt ="Design view" width="px" height="60px" src="images/alm_icon.png" />](https://github.com/bertino777/Dynamics365-App-4-NGO/blob/main/ALM.md)
+*Click on the icon to see the Design view*
+
+[<img alt ="Design view" width="px" height="60px" src="images/alm_icon.png" />](https://github.com/bertino777/Dynamics365-App-4-NGO/blob/main/DesignView.md)
 
 # Application LifeCycle Management (ALM)
-*Click below to see the ALM*
+*Click on the icon to see the ALM*
+
 [<img alt ="ALM" width="px" height="60px" src="images/alm_icon.png" />](https://github.com/bertino777/Dynamics365-App-4-NGO/blob/main/ALM.md)
