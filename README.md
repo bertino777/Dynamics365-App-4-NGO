@@ -24,7 +24,7 @@ Alpha uses a basic version of Insightly which was deployed in 2013 with a single
 |Alpha NGO| CRM Assets Consulting|
 | --------| ---------------------|
 |Alpha Team Members| CRM AssetsTeam Members|
-| -------------------------------|
+| |
 |Assistant Project Manager : Ayu |Business Analyst: Yvon|
 |IT / Processes/Product Owner: Thomas|Technical Analyst: Valentin|
 |Community Engagement & Partnership: Vijay| Architect & PM: Fabrice|
