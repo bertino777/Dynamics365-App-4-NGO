@@ -319,7 +319,10 @@ After the meeting is created, we can update details to specifiy the registration
 | - | - |
 |---|---|
 | ![](/images/registration_link_manual.png) | ![](/images/event_type_get_reg_link.png)  |
-| ![](/images/registration_link_manual.png) | ![](/images/registration_link_manual.png) |
+| ![](/images/meeting_id_reg_link.png) | ![](/images/event_id_reg_link.png) |
+| ![](/images/http_body_reg_link.png) | ![](/images/array_var_reg_link.png) |
+| ![](/images/token_reg_link.png) | ![](/images/http_body_val_reg_link.png) |
+| ![](/images/token_extracted_reg_link.png) | ![](/images/xxx.png) |
 
 ### 3. ZoomUpdated
 
