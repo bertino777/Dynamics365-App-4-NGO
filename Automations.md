@@ -139,6 +139,23 @@ This flow help users to create a Zoom meeting directly from dynamics 365
 }
 ```
 
+![](images/zoom_account.png) 
+
+```
+{
+  "type": "Compose",
+  "inputs": "@triggerOutputs()?['body/ren_zoomaccount']",
+  "runAfter": {
+    "token_value": [
+      "Succeeded"
+    ]
+  },
+  "metadata": {
+    "operationMetadataId": "c9588f80-1fd1-4d61-a71f-ba65cb3af0ac"
+  }
+}
+```
+
 3. 
 4. 
 ## C# Plug-Ins
