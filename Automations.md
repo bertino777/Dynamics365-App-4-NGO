@@ -235,8 +235,10 @@ This flow help users to create a Zoom meeting directly from dynamics 365
 }
 ```
 
-![](create_zoom_switch_case.png) 
+![](create_zoom_switch_case.png)
+
 ![](create_zoom_switch_case_set.png) 
+
 ```
 {
   "type": "SetVariable",
@@ -248,9 +250,12 @@ This flow help users to create a Zoom meeting directly from dynamics 365
     "operationMetadataId": "8afd31f5-7f19-438c-913f-684dcd1e37c8"
   }
 }
+```
+![](create_zoom_switch_case2.png) 
 
-create_zoom_switch_case2
-create_zoom_switch_case2_set
+![](create_zoom_switch_case2_set.png) 
+
+```
 {
   "type": "SetVariable",
   "inputs": {
@@ -262,7 +267,9 @@ create_zoom_switch_case2_set
   }
 }
 ```
+
 ![](create_zoom_switch_case3.png) 
+
 ![](create_zoom_switch_case3_set.png) 
 
 ```
