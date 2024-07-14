@@ -339,9 +339,83 @@ By clicking on a flown button the user can run the flow and the below will happe
 - All registrants/participants who are contacts will be updated in the CRM and records about details updated will be created under Contact Updates
 
 
-#### Global flow
-![](images/xxx.png) 
+#### Flow
 
-#### Detailed flow
+| - | - |
+|---|---|
+| ![](/images/zoom_updated_1.png) | ![](/images/zoom_updated_2.png)  |
+| ![](/images/zoom_updated_3.png) | ![](/images/zoom_updated_4.png)  |
+| ![](/images/zoom_updated_5.png) | ![](/images/zoom_updated_6.png)  |
+| ![](/images/zoom_updated_7.png) | ![](/images/zoom_updated_8.png)  |
+| ![](/images/zoom_updated_9.png) | ![](/images/zoom_updated_10.png)  |
+| ![](/images/zoom_updated_11.png) | ![](/images/zoom_updated_12.png)  |
+| ![](/images/zoom_updated_13.png) | ![](/images/zoom_updated_14.png)  |
+| ![](/images/zoom_updated_15.png) | ![](/images/zoom_updated_16.png)  |
+| ![](/images/zoom_updated_17.png) | ![](/images/zoom_updated_18.png)  |
+| ![](/images/zoom_updated_19.png) | ![](/images/zoom_updated_20.png)  |
+| ![](/images/zoom_updated_21.png) | ![](/images/zoom_updated_22.png)  |
+| ![](/images/zoom_updated_23.png) | ![](/images/zoom_updated_24.png)  |
+| ![](/images/zoom_updated_25.png) | ![](/images/zoom_updated_26.png)  |
+| ![](/images/zoom_updated_27.png) | ![](/images/zoom_updated_28.png)  |
+| ![](/images/zoom_updated_29.png) | ![](/images/zoom_updated_30.png)  |
+| ![](/images/zoom_updated_31.png) | ![](/images/zoom_updated_32.png)  |
+| ![](/images/zoom_updated_33.png) | ![](/images/zoom_updated_34.png)  |
+| ![](/images/zoom_updated_35.png) | ![](/images/zoom_updated_36.png)  |
+| ![](/images/zoom_updated_37.png) | ![](/images/zoom_updated_38.png)  |
+| ![](/images/zoom_updated_39.png) | ![](/images/zoom_updated_40.png)  |
+| ![](/images/zoom_updated_41.png) | ![](/images/zoom_updated_42.png)  |
+| ![](/images/zoom_updated_43.png) | ![](/images/zoom_updated_44.png)  |
+| ![](/images/zoom_updated_45.png) | ![](/images/zoom_updated_46.png)  |
+| ![](/images/zoom_updated_47.png) | ![](/images/zoom_updated_48.png)  |
+| ![](/images/zoom_updated_49.png) | ![](/images/zoom_updated_50.png)  |
+| ![](/images/zoom_updated_51.png) | ![](/images/zoom_updated_52.png)  |
+| ![](/images/zoom_updated_53.png) | ![](/images/zoom_updated_54.png)  |
+| ![](/images/zoom_updated_55.png) | ![](/images/zoom_updated_56.png)  |
+| ![](/images/zoom_updated_57.png) | ![](/images/zoom_updated_58.png)  |
+| ![](/images/zoom_updated_59.png) | ![](/images/zoom_updated_60.png)  |
+| ![](/images/zoom_updated_61.png) | ![](/images/zoom_updated_62.png)  |
+| ![](/images/zoom_updated_63.png) | ![](/images/zoom_updated_64.png)  |
+| ![](/images/zoom_updated_65.png) | ![](/images/zoom_updated_66.png)  |
+| ![](/images/zoom_updated_67.png) | ![](/images/zoom_updated_68.png)  |
+| ![](/images/zoom_updated_69.png) | ![](/images/zoom_updated_70.png)  |
+| ![](/images/zoom_updated_71.png) | ![](/images/zoom_updated_72.png)  |
+| ![](/images/zoom_updated_73.png) | ![](/images/zoom_updated_74.png)  |
+| ![](/images/zoom_updated_75.png) | ![](/images/zoom_updated_76.png)  |
+| ![](/images/zoom_updated_77.png) | ![](/images/zoom_updated_78.png)  |
+| ![](/images/zoom_updated_79.png) | ![](/images/zoom_updated_80.png)  |
+| ![](/images/zoom_updated_81.png) | ![](/images/zoom_updated_82.png)  |
+| ![](/images/zoom_updated_83.png) | ![](/images/zoom_updated_84.png)  |
+| ![](/images/zoom_updated_85.png) | ![](/images/zoom_updated_86.png)  |
+| ![](/images/zoom_updated_87.png) | ![](/images/zoom_updated_88.png)  |
+| ![](/images/zoom_updated_89.png) | ![](/images/zoom_updated_90.png)  |
+| ![](/images/zoom_updated_91.png) | ![](/images/zoom_updated_92.png)  |
+| ![](/images/zoom_updated_93.png) | ![](/images/zoom_updated_94.png)  |
+| ![](/images/zoom_updated_1.png) | ![](/images/zoom_updated_1.png)  |
+| ![](/images/zoom_updated_1.png) | ![](/images/zoom_updated_1.png)  |
+| ![](/images/zoom_updated_1.png) | ![](/images/zoom_updated_1.png)  |
+| ![](/images/zoom_updated_1.png) | ![](/images/zoom_updated_1.png)  |
+| ![](/images/zoom_updated_1.png) | ![](/images/zoom_updated_1.png)  |
+| ![](/images/zoom_updated_1.png) | ![](/images/zoom_updated_1.png)  |
+| ![](/images/zoom_updated_1.png) | ![](/images/zoom_updated_1.png)  |
+| ![](/images/zoom_updated_1.png) | ![](/images/zoom_updated_1.png)  |
+| ![](/images/zoom_updated_1.png) | ![](/images/zoom_updated_1.png)  |
+| ![](/images/zoom_updated_1.png) | ![](/images/zoom_updated_1.png)  |
+| ![](/images/zoom_updated_1.png) | ![](/images/zoom_updated_1.png)  |
+| ![](/images/zoom_updated_1.png) | ![](/images/zoom_updated_1.png)  |
+| ![](/images/zoom_updated_1.png) | ![](/images/zoom_updated_1.png)  |
+| ![](/images/zoom_updated_1.png) | ![](/images/zoom_updated_1.png)  |
+| ![](/images/zoom_updated_1.png) | ![](/images/zoom_updated_1.png)  |
+| ![](/images/zoom_updated_1.png) | ![](/images/zoom_updated_1.png)  |
+| ![](/images/zoom_updated_1.png) | ![](/images/zoom_updated_1.png)  |
+| ![](/images/zoom_updated_1.png) | ![](/images/zoom_updated_1.png)  |
+| ![](/images/zoom_updated_1.png) | ![](/images/zoom_updated_1.png)  |
+| ![](/images/zoom_updated_1.png) | ![](/images/zoom_updated_1.png)  |
+| ![](/images/zoom_updated_1.png) | ![](/images/zoom_updated_1.png)  |
+| ![](/images/zoom_updated_1.png) | ![](/images/zoom_updated_1.png)  |
+| ![](/images/zoom_updated_1.png) | ![](/images/zoom_updated_1.png)  |
+
+
+
+
  
 ## C# Plug-Ins
