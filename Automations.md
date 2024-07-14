@@ -318,7 +318,7 @@ After the meeting is created, we can update details to specifiy the registration
 
 | - | - |
 |---|---|
-| ![](/images/registration_link_manual.png) | ![](/registration_link_event_type.png)  |
+| ![](/images/registration_link_manual.png) | ![](/images/event_type_get_reg_link.png)  |
 | ![](/images/registration_link_manual.png) | ![](/images/registration_link_manual.png) |
 
 ### 3. ZoomUpdated
