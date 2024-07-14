@@ -75,6 +75,33 @@ This flow help users to create a Zoom meeting directly from dynamics 365
   }
 }
 ```
+
+![](images/zoom_token.png) 
+
+```
+{
+  "type": "Http",
+  "inputs": {
+    "uri": "https://zoom.us/oauth/token",
+    "method": "POST",
+    "headers": {
+      "Authorization": "Basic SndXbHNXY2RTZmlGUkhvb3dCMDE3ojKIDIJiIIS55J2NXQjlQQnYxTlo1Q0xYNzE5Vg=="
+    },
+    "queries": {
+      "grant_type": "account_credentials",
+      "account_id": "jX3wqUSPS_-kijSH54jj-A"
+    }
+  },
+  "runAfter": {
+    "zoomAccountValue": [
+      "Succeeded"
+    ]
+  },
+  "metadata": {
+    "operationMetadataId": "43d51270-0389-452e-b725-035622a38e5b"
+  }
+}
+```
 3. 
 4. 
 ## C# Plug-Ins
