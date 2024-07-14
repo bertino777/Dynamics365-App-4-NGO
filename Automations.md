@@ -9,6 +9,11 @@ As part of automations, Power automate flows and plug-ins have been built.
 1. Create Zoom Meeting
 This flow help users to create a Zoom meeting directly from dynamics 365
 
+### Global flow
+![](images/create_zoom_meeting_global.png) 
+
+### Detailed flaow
+
 3. 
 4. 
 ## C# Plug-Ins
