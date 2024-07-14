@@ -315,7 +315,7 @@ After the meeting is created, we can update details to specifiy the registration
 ![](images/get_zoom_registration_link.png) 
 
 #### Detailed flow
-
+<img align="right" width="100" height="100" src="images/registration_link_manual.png">
 
 ### 3. ZoomUpdated
 
