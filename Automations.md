@@ -122,6 +122,22 @@ This flow help users to create a Zoom meeting directly from dynamics 365
   }
 }
 ```
+![](images/token_value.png) 
+
+```
+{
+  "type": "Compose",
+  "inputs": "@variables('http body')['access_token']",
+  "runAfter": {
+    "Set_http_body": [
+      "Succeeded"
+    ]
+  },
+  "metadata": {
+    "operationMetadataId": "e5ff2171-a0c3-439c-bf6d-af93a3315cc0"
+  }
+}
+```
 
 3. 
 4. 
