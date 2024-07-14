@@ -311,7 +311,10 @@ After the meeting is created, we can update details to specifiy the registration
 
 ![](images/get_registration_link.png) 
 
-- 
+#### Global flow
+![](images/get_zoom_registration_link.png) 
+
+#### Detailed flow
 
 
 ### 3. ZoomUpdated
