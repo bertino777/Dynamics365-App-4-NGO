@@ -1,4 +1,5 @@
 # Automations
+![](images/flow_zoom.png) 
 
 ## Power automate flows
 
