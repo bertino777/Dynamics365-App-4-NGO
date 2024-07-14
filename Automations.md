@@ -8,7 +8,9 @@ As part of automations, Power automate flows and plug-ins have been built.
 
 ### 1. Create Zoom Meeting
 
-This flow help users to create a Zoom meeting directly from dynamics 365
+This flow help users to create a Zoom meeting directly from dynamics 365.
+From Event in Dynamics 365, we click on the new button to add a new event; we should specify the event type is zoom and then the system will display fields and tabs related to zoom event creation.
+
 
 #### Global flow
 ![](images/create_zoom_meeting_global.png) 
@@ -297,11 +299,13 @@ This flow help users to create a Zoom meeting directly from dynamics 365
 }
 ```
 
+
 ### 2. ZoomUpdated
 
 This flow help users to get in Dynamics 365 information about registrants, participants to a zoom meeting.
 By clicking on a button the user can run the flow and the below will happen:
-a. 
+
+- 
 
 
 #### Global flow
