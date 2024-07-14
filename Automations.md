@@ -52,6 +52,29 @@ This flow help users to create a Zoom meeting directly from dynamics 365
 }
 ```
 
+![](images/create_zoom_meeting_var2.png) 
+
+```
+{
+  "type": "InitializeVariable",
+  "inputs": {
+    "variables": [
+      {
+        "name": "zoomAccountValue",
+        "type": "string"
+      }
+    ]
+  },
+  "runAfter": {
+    "http_body": [
+      "Succeeded"
+    ]
+  },
+  "metadata": {
+    "operationMetadataId": "d0c5f62a-2e86-40ff-929f-ff7144c012eb"
+  }
+}
+```
 3. 
 4. 
 ## C# Plug-Ins
