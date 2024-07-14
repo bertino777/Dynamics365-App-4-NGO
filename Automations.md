@@ -307,7 +307,9 @@ Once the meeting is created, main information reagrding the meeting are reflecti
 
 ### 2. Get zoom registration link
 
-This
+After the meeting is created, we can update details to specifiy the registration is mandatory; then a registration link will be generated and we can run an automation to retrieve that link in Dynamics 365.
+
+![](images/get_registration_link.png) 
 
 - 
 
