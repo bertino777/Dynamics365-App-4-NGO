@@ -302,7 +302,7 @@ From Event in Dynamics 365, we click on the new button to add a new event; we sh
 
 Once the meeting is created, main information reagrding the meeting are reflecting in the event record in Dynamics 365.
 
-![](images/meeting_created.png) 
+![](images/meeting_created_.png) 
 
 
 ### 2. Get zoom registration link
