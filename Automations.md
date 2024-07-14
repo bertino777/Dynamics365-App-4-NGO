@@ -156,10 +156,83 @@ This flow help users to create a Zoom meeting directly from dynamics 365
 }
 ```
 
-![](images/switch_create_zoom.png) 
+![](images/create_zoom_switch.png) 
+![](images/create_zoom_switch_detail.png) 
 
 ```
-
+{
+  "type": "Switch",
+  "expression": "@outputs('zoom_account')",
+  "default": {
+    "actions": {
+      "Set_variable_3": {
+        "type": "SetVariable",
+        "inputs": {
+          "name": "zoomAccountValue",
+          "value": "me"
+        },
+        "metadata": {
+          "operationMetadataId": "6d2789ef-a260-40c4-b6c6-6c18303eb7ed"
+        }
+      }
+    }
+  },
+  "cases": {
+    "Case": {
+      "actions": {
+        "Set_zoomAccountValue": {
+          "type": "SetVariable",
+          "inputs": {
+            "name": "zoomAccountValue",
+            "value": "secretariat@ren21.net"
+          },
+          "metadata": {
+            "operationMetadataId": "8afd31f5-7f19-438c-913f-684dcd1e37c8"
+          }
+        }
+      },
+      "case": 910190000
+    },
+    "Case_2": {
+      "actions": {
+        "Set_variable": {
+          "type": "SetVariable",
+          "inputs": {
+            "name": "zoomAccountValue",
+            "value": "community@ren21.net"
+          },
+          "metadata": {
+            "operationMetadataId": "a0aab98b-136f-4446-afeb-6cd28f91270d"
+          }
+        }
+      },
+      "case": 910190001
+    },
+    "Case_3": {
+      "actions": {
+        "Set_variable_2": {
+          "type": "SetVariable",
+          "inputs": {
+            "name": "zoomAccountValue",
+            "value": "gsr@ren21.net"
+          },
+          "metadata": {
+            "operationMetadataId": "29c71f18-328d-4f80-9eba-540a0a88214f"
+          }
+        }
+      },
+      "case": 910190002
+    }
+  },
+  "runAfter": {
+    "zoom_account": [
+      "Succeeded"
+    ]
+  },
+  "metadata": {
+    "operationMetadataId": "77690a38-9cc2-43dc-a4fb-7dd8ee890181"
+  }
+}
 ```
 
 
