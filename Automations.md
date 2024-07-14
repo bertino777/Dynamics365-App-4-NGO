@@ -330,9 +330,13 @@ After the meeting is created, we can update details to specifiy the registration
 ### 3. ZoomUpdated
 
 This flow help users to get in Dynamics 365 information about registrants, participants to a zoom meeting.
-By clicking on a button the user can run the flow and the below will happen:
+By clicking on a flown button the user can run the flow and the below will happen:
 
-- 
+- Power automate will connect on Zoom API to retrieve registrants to  the Zoom meeting and they will be displayed under Zoom registrants tab on the event record
+- Power automate will connect on Zoom API to retrieve participants to  the Zoom meeting and they will be displayed under Zoom registrants tab on the event record
+- Registrants who are both registrants and participants will be displayed under Zoom registrants & participants tab under event record
+- All registrants/participants who are not leads nor contacts will be created as lead in the CRM
+- All registrants/participants who are contacts will be updated in the CRM and records about details updated will be created under Contact Updates
 
 
 #### Global flow
