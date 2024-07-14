@@ -6,14 +6,14 @@ As part of automations, Power automate flows and plug-ins have been built.
 
 ![](images/flow_zoom.png) 
 
-1. Create Zoom Meeting
+### 1. Create Zoom Meeting
 
 This flow help users to create a Zoom meeting directly from dynamics 365
 
-### Global flow
+#### Global flow
 ![](images/create_zoom_meeting_global.png) 
 
-### Detailed flow
+#### Detailed flow
 ![](images/zoom_trigger.png) 
 ```
 {
@@ -234,10 +234,8 @@ This flow help users to create a Zoom meeting directly from dynamics 365
   }
 }
 ```
-
-![](create_zoom_switch_case.png)
-
-![](create_zoom_switch_case_set.png) 
+![](images/create_zoom_switch_case.png) 
+![](images/create_zoom_switch_case_set.png) 
 
 ```
 {
@@ -251,9 +249,9 @@ This flow help users to create a Zoom meeting directly from dynamics 365
   }
 }
 ```
-![](create_zoom_switch_case2.png) 
 
-![](create_zoom_switch_case2_set.png) 
+![](images/create_zoom_switch_case2.png) 
+![](images/create_zoom_switch_case2_set.png) 
 
 ```
 {
@@ -268,9 +266,8 @@ This flow help users to create a Zoom meeting directly from dynamics 365
 }
 ```
 
-![](create_zoom_switch_case3.png) 
-
-![](create_zoom_switch_case3_set.png) 
+![](images/create_zoom_switch_case3.png) 
+![](images/create_zoom_switch_case3_set.png) 
 
 ```
 {
@@ -285,7 +282,7 @@ This flow help users to create a Zoom meeting directly from dynamics 365
 }
 ```
 
-![](create_zoom_switch_case_default_set.png) 
+![](images/create_zoom_switch_case_default_set.png) 
 
 ```
 {
@@ -300,6 +297,16 @@ This flow help users to create a Zoom meeting directly from dynamics 365
 }
 ```
 
-3. 
-4. 
+### 2. ZoomUpdated
+
+This flow help users to get in Dynamics 365 information about registrants, participants to a zoom meeting.
+By clicking on a button the user can run the flow and the below will happen:
+a. 
+
+
+#### Global flow
+![](images/xxx.png) 
+
+#### Detailed flow
+ 
 ## C# Plug-Ins
