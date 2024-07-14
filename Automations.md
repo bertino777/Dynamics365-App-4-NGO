@@ -1,5 +1,6 @@
 # Automations
 
+As part of automations, Power automate flows and plug-ins have been built.
 
 ## Power automate flows
 
