@@ -452,6 +452,13 @@ By clicking on a flown button the user can run the flow and the below will happe
 | ![](/images/zoom_updated_1_73.png) | ![](/images/zoom_updated_1_74.png)  |
 
 
+### 4. Marketing list to mailchimp
 
- 
+When we create a dynamic marketing list, we have the possibility to precise that the list will be synchronized with a Mailchimp list. The automation will therefore connect on Mailchimp API to create a list that will carry the same name as the dynamcic marketing list.
+
+#### Global flow
+![](images/mk_list_to_mailchimp.png) 
+
+#### Detailed flow
+
 ## C# Plug-Ins
