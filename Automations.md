@@ -670,4 +670,20 @@ When we create a dynamic marketing list, we have the possibility to precise that
 }
 ```
 
+### 5. Synch members MK list & Mailchimp
+
+We can manually run a flow to synchronize the dynamics marketing list from the CRM with its corresponding marketing list in Mailchimp.
+Dynamics 365 will then compare all members from the two list and add or delete any member in Mailchimp list to make members be exactly the same in the two lists.
+
+![](/images/mk_list_to_mailchimp_2.png)
+
+#### Global flow
+![](images/mk_list_to_mailchimp.png) 
+
+#### Detailed flow
+
+| - | - |
+|---|---|
+| ![](/images/mk_list_to_mailchimp.png) | ![](/images/mk_list_to_mailchimp1.png)  |
+
 ## C# Plug-Ins
