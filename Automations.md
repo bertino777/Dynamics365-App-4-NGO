@@ -461,4 +461,211 @@ When we create a dynamic marketing list, we have the possibility to precise that
 
 #### Detailed flow
 
+| - | - |
+|---|---|
+| ![](/images/mk_list_to_mailchimp.png) | ![](/images/mk_list_to_mailchimp1.png)  |
+| ![](/images/mk_list_to_mailchimp2.png) | ![](/images/mk_list_to_mailchimp3.png)  |
+| ![](/images/mk_list_to_mailchimp4.png) | ![](/images/mk_list_to_mailchimp5.png)  |
+| ![](/images/mk_list_to_mailchimp6.png) | ![](/images/mk_list_to_mailchimp7.png)  |
+| ![](/images/mk_list_to_mailchimp8.png) | ![](/images/mk_list_to_mailchimp9.png)  |
+| ![](/images/mk_list_to_mailchimp10.png) | ![](/images/mk_list_to_mailchimp11.png)  |
+| ![](/images/mk_list_to_mailchimp12.png) | ![](/images/mk_list_to_mailchimp13.png)  |
+| ![](/images/mk_list_to_mailchimp14.png) | ![](/images/mk_list_to_mailchimp15.png)  |
+| ![](/images/mk_list_to_mailchimp16.png) | ![](/images/mk_list_to_mailchimp17.png)  |
+
+
+*Parse JSON - mailchimp lists shema*
+
+```
+{
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "string"
+            },
+            "web_id": {
+                "type": "number"
+            },
+            "name": {
+                "type": "string"
+            },
+            "contact": {
+                "type": "object",
+                "properties": {
+                    "company": {
+                        "type": "string"
+                    },
+                    "address1": {
+                        "type": "string"
+                    },
+                    "address2": {
+                        "type": "string"
+                    },
+                    "city": {
+                        "type": "string"
+                    },
+                    "state": {
+                        "type": "string"
+                    },
+                    "zip": {
+                        "type": "string"
+                    },
+                    "country": {
+                        "type": "string"
+                    },
+                    "phone": {
+                        "type": "string"
+                    }
+                }
+            },
+            "permission_reminder": {
+                "type": "string"
+            },
+            "use_archive_bar": {
+                "type": "boolean"
+            },
+            "campaign_defaults": {
+                "type": "object",
+                "properties": {
+                    "from_name": {
+                        "type": "string"
+                    },
+                    "from_email": {
+                        "type": "string"
+                    },
+                    "subject": {
+                        "type": "string"
+                    },
+                    "language": {
+                        "type": "string"
+                    }
+                }
+            },
+            "notify_on_subscribe": {
+                "type": "string"
+            },
+            "notify_on_unsubscribe": {
+                "type": "string"
+            },
+            "date_created": {
+                "type": "string"
+            },
+            "list_rating": {
+                "type": "number"
+            },
+            "email_type_option": {
+                "type": "boolean"
+            },
+            "subscribe_url_short": {
+                "type": "string"
+            },
+            "subscribe_url_long": {
+                "type": "string"
+            },
+            "beamer_address": {
+                "type": "string"
+            },
+            "visibility": {
+                "type": "string"
+            },
+            "double_optin": {
+                "type": "boolean"
+            },
+            "has_welcome": {
+                "type": "boolean"
+            },
+            "marketing_permissions": {
+                "type": "boolean"
+            },
+            "modules": {
+                "type": "array"
+            },
+            "stats": {
+                "type": "object",
+                "properties": {
+                    "member_count": {
+                        "type": "number"
+                    },
+                    "unsubscribe_count": {
+                        "type": "number"
+                    },
+                    "cleaned_count": {
+                        "type": "number"
+                    },
+                    "member_count_since_send": {
+                        "type": "number"
+                    },
+                    "unsubscribe_count_since_send": {
+                        "type": "number"
+                    },
+                    "cleaned_count_since_send": {
+                        "type": "number"
+                    },
+                    "campaign_count": {
+                        "type": "number"
+                    },
+                    "campaign_last_sent": {
+                        "type": "string"
+                    },
+                    "merge_field_count": {
+                        "type": "number"
+                    },
+                    "avg_sub_rate": {
+                        "type": "number"
+                    },
+                    "avg_unsub_rate": {
+                        "type": "number"
+                    },
+                    "target_sub_rate": {
+                        "type": "number"
+                    },
+                    "open_rate": {
+                        "type": "number"
+                    },
+                    "click_rate": {
+                        "type": "number"
+                    },
+                    "last_sub_date": {
+                        "type": "string"
+                    },
+                    "last_unsub_date": {
+                        "type": "string"
+                    }
+                }
+            },
+            "_links": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "rel": {
+                            "type": "string"
+                        },
+                        "href": {
+                            "type": "string"
+                        },
+                        "method": {
+                            "type": "string"
+                        },
+                        "targetSchema": {
+                            "type": "string"
+                        },
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "rel",
+                        "href",
+                        "method"
+                    ]
+                }
+            }
+        }
+    }
+}
+```
+
 ## C# Plug-Ins
