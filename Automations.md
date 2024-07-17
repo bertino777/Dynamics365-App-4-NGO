@@ -864,7 +864,10 @@ Dynamics 365 will then compare all members from the tag and the list then add or
 
 #### Detailed flow
 
-![](images/mk_list_to_mailchimp.png) 
+| - | - |
+|---|---|
+| ![](/images/tag_mklist.png) | ![](/images/tag_mklist.png) |
+
 
 ```
 <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true" no-lock="false">
