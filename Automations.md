@@ -861,6 +861,7 @@ Dynamics 365 will then compare all members from the two list and add or delete a
 We can manually run a flow to synchronize a tag record from the CRM with its corresponding marketing list in Mailchimp.
 Dynamics 365 will then compare all members from the tag and the list then add or delete any member in Mailchimp list to make members be exactly the same in both the tag and the lists. Note that tag is a custom table created in the CRM having many to many relationship with Contact entity.
 
+![](/images/tag.png)
 
 #### Detailed flow
 
@@ -923,5 +924,16 @@ The organization has a WordPress website where several forms can be filled by vi
 | ![](/images/sb7.png) | ![](/images/sb8.png) |
 | ![](/images/sb9.png) | ![](/images/sb10.png) |
 | ![](/images/sb11.png) | ![](/images/sb12.png) |
+
+### 8. No Zoom flow
+
+This automation will help the organization getting the list of those have registred and participated to any non zoom meeting.
+
+
+#### Detailed flow
+
+| - | - |
+|---|---|
+| ![](/images/sb1.png) | ![](/images/sb2.png) |
 
 ## C# Plug-Ins
