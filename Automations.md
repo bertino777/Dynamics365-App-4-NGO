@@ -866,7 +866,20 @@ Dynamics 365 will then compare all members from the tag and the list then add or
 
 | - | - |
 |---|---|
-| ![](/images/tag_mklist.png) | ![](/images/tag_mklist.png) |
+| ![](/images/tag_mklist1.png) | ![](/images/tag_mklist2.png) |
+| ![](/images/tag_mklist3.png) | ![](/images/tag_mklist4.png) |
+| ![](/images/tag_mklist5.png) | ![](/images/tag_mklist6.png) |
+| ![](/images/tag_mklist7.png) | ![](/images/tag_mklist8.png) |
+| ![](/images/tag_mklist9.png) | ![](/images/tag_mklist10.png) |
+| ![](/images/tag_mklist11.png) | ![](/images/tag_mklist12.png) |
+| ![](/images/tag_mklist13.png) | ![](/images/tag_mklist14.png) |
+| ![](/images/tag_mklist15.png) | ![](/images/tag_mklist16.png) |
+| ![](/images/tag_mklist17.png) | ![](/images/tag_mklist18.png) |
+| ![](/images/tag_mklist19.png) | ![](/images/tag_mklist20.png) |
+| ![](/images/tag_mklist21.png) | ![](/images/tag_mklist22.png) |
+| ![](/images/tag_mklist23.png) | ![](/images/tag_mklist24.png) |
+| ![](/images/tag_mklist25.png) | ![](/images/tag_mklist26.png) |
+
 
 
 ```
@@ -893,5 +906,16 @@ Dynamics 365 will then compare all members from the tag and the list then add or
 	</entity>
 </fetch>
 ```
+
+### 7. Create Newsletter Member
+
+The organization has a WordPress website where several forms can be filled by visitors. We have implemented an Azure service bus to collect information from forms submited by users and we use these information to create website visitors as leads in Dynamics 365 that can be qualified as contacts.
+
+
+#### Detailed flow
+
+| - | - |
+|---|---|
+| ![](/images/tag_mklist1.png) | ![](/images/tag_mklist2.png) |
 
 ## C# Plug-Ins
