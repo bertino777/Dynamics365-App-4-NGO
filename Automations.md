@@ -974,9 +974,11 @@ This automation will help the organization getting the list of those have regist
 | ![](/images/no_zoom75.png) | ![](/images/no_zoom76.png)|
 
 
-## C# Plug-Ins
+## C# Codes
 
-### Link Contacts with organizations using accounid
+### Plug-Ins
+
+#### 1. Link Contacts with organizations using accounid
 
 ```
 using Microsoft.Xrm.Sdk;
@@ -1049,7 +1051,7 @@ namespace Linking_Organization
     }
 ```
 
-### Link Contacts with organizations using alternate key (email address)
+#### 2. Link Contacts with organizations using alternate key (email address)
 
 ```
 using Microsoft.Xrm.Sdk;
@@ -1123,3 +1125,7 @@ namespace Linking_Organization
 
     }
 ```
+
+### Console Application codes
+
+
