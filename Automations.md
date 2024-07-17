@@ -934,6 +934,6 @@ This automation will help the organization getting the list of those have regist
 
 | - | - |
 |---|---|
-| ![](/images/sb1.png) | ![](/images/sb2.png) |
+| ![](/images/no_zoom.png) | ![](/images/no_zoom.png) |
 
 ## C# Plug-Ins
