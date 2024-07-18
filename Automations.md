@@ -456,11 +456,6 @@ By clicking on a flown button the user can run the flow and the below will happe
 
 When we create a dynamic marketing list, we have the possibility to precise that the list will be synchronized with a Mailchimp list. The automation will therefore connect on Mailchimp API to create a list that will carry the same name as the dynamcic marketing list.
 
-![](/images/mk_list_to_mailchimp_1.png)
-
-#### Global flow
-![](images/mk_list_to_mailchimp.png) 
-
 #### Detailed flow
 
 | - | - |
@@ -676,9 +671,6 @@ We can manually run a flow to synchronize the dynamics marketing list from the C
 Dynamics 365 will then compare all members from the two list and add or delete any member in Mailchimp list to make members be exactly the same in the two lists.
 
 ![](/images/mk_list_to_mailchimp_2.png)
-
-#### Global flow
-![](images/mk_list_to_mailchimp.png) 
 
 #### Detailed flow
 
@@ -1051,7 +1043,7 @@ namespace Linking_Organization
     }
 ```
 
-#### 2. Link Contacts with organizations using alternate key (email address)
+#### 2. Link Contacts with organizations using alternate key
 
 ```
 using Microsoft.Xrm.Sdk;
@@ -1090,28 +1082,6 @@ namespace Linking_Organization
                     string importOrgId = contactRecord.GetAttributeValue<string>("ren_organization_id_import");
                     contactRecord["parentcustomerid"] = new EntityReference("account", "ren_a_id_import", importOrgId);
                     service.Update(contactRecord);
-
-                    /*if (!string.IsNullOrEmpty(importOrgId))
-                        {
-                        Guid accountId = default(Guid);
-                        QueryByAttribute query = new QueryByAttribute
-                            {
-                            EntityName = "account"
-                            };                                                                          // no columnset, we just want the id
-                        query.AddAttributeValue("ren_a_id_import", importOrgId);
-
-
-
-                        EntityCollection results = service.RetrieveMultiple(query);
-                        if (results.Entities.Count > 0)
-                            {
-                            accountId = results[0].Id;
-                            }
-
-                        contactRecord["parentcustomerid"] = new EntityReference("account", accountId);
-                        service.Update(contactRecord);
-                        }*/
-
                     }
 
                 catch (FaultException<OrganizationServiceFault> ex) // This uses System.ServiceModel;
@@ -1831,6 +1801,7 @@ namespace Dynamics365ConsoleApp
 ## JavaScript codes
 
 ### Entity records count
+This code helps the agency to easily count number of records under Account and Contact tables by clicking on a button from inside the CRM. When number of records of a table exceed 5000 counting it brings some challenges.
 
 ```
 function entityRecordCount() {
