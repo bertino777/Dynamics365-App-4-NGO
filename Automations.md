@@ -1803,6 +1803,10 @@ namespace Dynamics365ConsoleApp
 ### Entity records count
 This code helps the agency to easily count number of records under Account and Contact tables by clicking on a button from inside the CRM. When number of records of a table exceed 5000 counting it brings some challenges.
 
+| - | - |
+|---|---|
+| ![](/images/rec_count1.png) | ![](/images/rec_count2.png)|
+
 ```
 function entityRecordCount() {
     // getGlobalContext() method provides access to the global context
