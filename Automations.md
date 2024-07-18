@@ -1191,8 +1191,8 @@ namespace Dynamics365ConsoleApp
             // Initialize D365 connection
             string clientId = "???";
             string clientSecret = "??????";
-            string authority = "https://login.microsoftonline.com/d144fa3f-7f04-4054-bdd9-e8885f3f0821";
-            string crmURL = "https://ren21uat.crm4.dynamics.com";
+            string authority = "https://login.microsoftonline.com/???";
+            string crmURL = "https://xxxuat.crm4.dynamics.com";
 
             string connString = $"AuthType=ClientSecret;Url={crmURL};ClientId={clientId};ClientSecret={clientSecret};Authority={authority};RequireNewInstance=True;";
             CrmServiceClient serviceClient = new CrmServiceClient(connString);
