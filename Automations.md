@@ -1908,6 +1908,53 @@ print(len(df))
 ```
 Output: 3
 
+*Split a dataframe depending on a condition*
+Example 1: Condition on string length
+- Define a function
+- Apply the function to the dataframes
+
+```
+def check_len(text):
+ if len(str(text)) >= 300:
+ return True
+ else:
+ return False
+dataFrame1 = df[df["OrganizationName"].apply(check_len)]
+dataFrame2 = df[~df["OrganizationName"].apply(check_len)]
+```
+```
+list_of_strings = ['html', 'husband', 'Click', 'Looking', 'doing', 'Awesome', 'Feel', 'Follow']
+def remove_records_with_urls(url_string):
+ if any(substring in str(url_string) for substring in list_of_strings):
+ return False
+ else:
+ return True
+# Applying function to dataframe
+dataFrameFreeFromDoubleQuoteHyperLink = dataFrame[dataFrame["OrganizationName"].apply(remove_records_with_urls)]
+dataFrameWithDoubleQuoteHyperLink = dataFrame[~dataFrame["OrganizationName"].apply(remove_records_with_urls)]
+```
+
+*Exporting dataframes*
+Export to Excel
+```
+dataFrame1.to_excel("J:\\1_Ren21\\Final..Final\\organization.import\\dataFrame1.xlsx", index=False)
+dataFrame2.to_excel("J:\\1_Ren21\\Final..Final\\organization.import\\dataFrame2.xlsx", index=False)
+```
+Export to csv
+```
+DataFrameExploded.to_csv("J:\\1_Ren21\\contactImport1\\1-1-dataFrameExploded.csv", index=True)
+```
+
+*Convert dataframe column into list*
+```
+organization_col_list = df["Organization"].values.tolist()
+```
+
+*Convert dataframe in str*
+```
+dataFrame = dataFrame.astype(str)
+```
+
 ### Section 2
 
 ```
