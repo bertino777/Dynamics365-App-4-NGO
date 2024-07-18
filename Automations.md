@@ -2293,6 +2293,97 @@ dataFrameFreFromCompletelyDuplicate =
 dataFrameWithoutSpecialCharacter.drop_duplicates()
 ```
 
+*Replace np.nan by empty string*
+```
+dataFrameFreFromCompletelyDuplicate.replace({np.nan: ''}, inplace=True)
+```
+
+*Converting columns from object dtype to string*
+```
+dataFrameFreFromCompletelyDuplicate['BillingAddressCity'] = dataFrameFreFromCompletelyDuplicate['BillingAddressCity'].astype("string") dataFrameFreFromCompletelyDuplicate['BillingAddressCountry'] = dataFrameFreFromCompletelyDuplicate['BillingAddressCountry'].astype("string")
+```
+
+*Convert string into list using empty string as separator*
+```
+def convert_string_to_list(string):
+ li = list(string.split(" "))
+ return li
+```
+
+*Convert string into uppercase*
+```
+def upercase_fct(text_string):
+ return str(text_string).upper()
+```
+
+*Apply() method*
+It helps to apply a method on each dataframe row.
+The function will process on each email address
+```
+def remove_space(string_text):
+ return re.sub(r'\s', '', str(string_text))
+dataFrame["EmailAddress"] = dataFrame["EmailAddress"].apply(remove_space)
+```
+
+*Split()*
+```
+def transform_string_email_in_ist(string_email):
+ return str(string_email).split(';')
+```
+
+*Explode()*
+Let us assume we have several emails on a column and we want to get each email on a single row.
+First step will be to transform emails into list of emails, then apply the explode() method.
+| Organization | City | Country | Email |
+|---|---|---|---|
+|ABC CONSULTING | Yaounde| Cameroon| yvontjs@gmail.com; zaic@hotmail.com| 
+|ARIK AIR | Lagos| Nigeria| bertino@yahoo.com| 
+|CONGELCAM  |  Doula | Cameroon| yvontjs@gmail.com;  mich@outlook.fr; ben@gmail.com| 
+
+```
+import pandas as pd
+df = pd.read_excel("J:\\1_Ren21\\Final..Final\\organization.import\\test_org.xlsx", sheet_name='Sheet1')
+def transform_string_email_in_list(string_email):
+ return str(string_email).split(';')
+df['Email'] = df['Email'].apply(transform_string_email_in_list)
+DataFrameExploded = df.explode('Email')
+DataFrameExploded.to_excel("J:\\1_Ren21\\Final..Final\\organization.import\\dataFrameExploded.xlsx", index=True)
+```
+| Organization | City | Country | Email |
+|---|---|---|---|
+|ABC CONSULTING | Yaounde| Cameroon| yvontjs@gmail.com| 
+|ABC CONSULTING | Yaounde| Cameroon| zaic@hotmail.com| 
+|ARIK AIR | Lagos| Nigeria| bertino@yahoo.com| 
+|CONGELCAM  |  Doula | Cameroon| yvontjs@gmail.com|
+|CONGELCAM  |  Doula | Cameroon| mich@outlook.fr|
+|CONGELCAM  |  Doula | Cameroon| ben@gmail.com|
+
+
+*Get list of records that are processed and not imported*
+This is the scenario: A console App processed data in the CRM and some import failed. We need to know records that have not been imported in the CRM.
+We have to build a file with two columns of identifier, maybe the Email. So, we will have Email1 and Email2 that are emails in initial file and those imported in the CRM (to get these one we will export it from CRM).
+Then we will process that file with the below python code:
+```
+import pandas as pd
+df_ext = pd.read_excel(J:\\1_Ren21\\Final..Final\\contact.import\\contacts_ren21___04_01_2024_14.30.pm.xlsx", sheet_name='Sheet1')
+df_check = pd.read_excel("J:\\1_Ren21\\Final..Final\\contact.import\\check.xlsx", sheet_name='Sheet1')
+df_check_ser1 = df_check['EmailAddress1']
+df_check_set1 = set(df_check_ser1)
+df_check_ser2 = df_check['EmailAddress2']
+df_check_set2 = set(df_check_ser2)
+set_diff = df_check_set1.difference(df_check_set2)
+list_diff = list(set_diff)
+def get_fake(emailAdress):
+ if str(emailAdress) in list_diff:
+ return True
+ else:
+ return False
+dataFrameDiff = df_ext[df_ext["EmailAddress"].apply(get_fake)]
+dataFrameDiff.to_excel("J:\\1_Ren21\\Final..Final\\contact.import\\diff10.xlsx", index=False)
+print(len(list_diff))
+print(len(df_check_set2))
+```
+
 
 ### Section 2
 
