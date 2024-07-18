@@ -1882,3 +1882,268 @@ function entityRecordCount() {
 
 }
 ```
+
+## Python codes
+
+```
+--- Python code to read a csv file using pandas
+
+######
+# 1) Import pandas library
+import pandas as pd
+
+# 2) Define csv file path
+	# We should use double anti-slash as well in the file path
+csv_file_path = "J:\\1_Ren21\\organizationImport\\Organizations.csv"
+
+# 3) Create a DataFrame to read the csv file
+df = pd.read_csv(csv_file_path)
+
+--- Python code to get dataFrame number of rows
+# 'df' is the panda dataFrame we want to get the number of rows
+len(df)
+
+--- Python code to convert a dataFrame column in String data type
+# 'df' is the dataFrame and 'OrganizationName' is the dataFrame column name
+df['OrganizationName'] = df['OrganizationName'].astype("string")
+
+--- Python code to replace empty string under a dataFrame column with NAN
+# 'df' is the dataFrame and 'OrganizationName' is the dataFrame column name
+df['OrganizationName'].replace(' ', np.nan, inplace=True)
+
+--- Python code to remove all rows having NAN value under a dataFrame column
+# 'df' is the dataFrame and 'OrganizationName' is the dataFrame column name
+df.dropna(subset=['OrganizationName'], inplace=True)
+
+--- Python code to convert columns from object dtype to string
+# 'df' is the dataFrame 
+df.replace({np.nan: ''}, inplace=True)
+
+--- Python code to merge partially duplicated values
+# 'df' is the dataFrame, # 'df_merged' is the merged dataFrame; 'OrganizationName', 'Fax', 'Phone' and 'Website' are the different columns to be merged; '$' sign is used as separator
+df_merged = df.groupby(['OrganizationName']).agg(
+	{
+		'Fax': ' $ '.join, 
+		'Phone': ' $ '.join, 
+		'Website': ' $ '.join
+	}).reset_index()
+	
+--- Python code to export a dataFrame to csv
+# 'df' is the dataFrame
+df.to_csv("J:\\1_Ren21\\organizationImport\\file_name.csv", index=True)
+
+--- Python code to read Excel file using pandas
+
+######
+# 1) Import pandas library
+import pandas as pd
+
+# 2) Define Excel file path
+	# We should use double anti-slash as well in the file path
+excel_file_path = "J:\\1_Ren21\\organizationImport\\Organizations.xlsx"
+
+# 3) Create a DataFrame to read the csv file
+# 'df' is the dataFrame
+df = pd.read_csv(excel_file_path)
+
+--- Python code to convert a dataFrame column into list
+# 'df' is the dataFrame
+# 'OrganizationName' is the column name
+# 'listFromDataFrameCol' is the list name built from the dataFrame column
+listFromDataFrameCol = df['OrganizationName'].tolist() 
+
+--- Python function to convert items (having a separator) from a list into set 
+# The purpose is to build a subset of items containing unique values
+
+def convert_list_into_set(my_list):
+    final_list = []
+    for item_list in my_list:
+        item_list = str(item_list).replace(' ', '')
+        final_list.append(set(item_list.split('|')))
+    return final_list
+	
+print(convert_list_into_set(['a | b | a', 'e|d', 'c|  k| c'])) ==> [{'b', 'a'}, {'e', 'd'}, {'k', 'c'}]
+
+--- Python code to replace items that exist in a set by empty
+# The scenario is we have values that can change positions and we want to remove them no matter their positions
+# For instance: we can have at first program run "'a | b | a', 'e|d', 'c|  k| c'", second execution we rather have "'b | a | a', 'e|d', 'k|  c| c'" ...
+# The reference set containing items to be removed is 'set_bad_values'
+
+def replace_rows_with_fake_records_by_empty(url_string):
+    new_url_string = str(url_string).replace(' ', '')
+    set_url_string = set(new_url_string.split('|'))
+    if set_url_string in set_bad_values:
+        return ''
+    else:
+        return str(url_string)
+
+--- Python code to remove values that are part of a predefined list
+# 'list_of_strings' is our list containing values of fake items
+
+def remove_records_fake_records_special_characters(url_string):
+    if any(substring in str(url_string) for substring in list_of_strings):
+        return ''
+    else:
+        return str(url_string)
+
+--- Python code - apply() method on a dataFrame column
+# 'df' is our dataFrame and 'OrganizationName' is the dataFrame column
+# 'remove_records_fake_records_special_characters' is our function
+df["OrganizationName"] = df["OrganizationName"].apply(remove_records_fake_records_special_characters)
+
+--- Python code to remove all rows under a dataFrame having empty values under a specific dataFrame column
+# 'df' is our dataFrame and 'OrganizationName' is the dataFrame column
+df = df.loc[df['OrganizationName'] != '', :]
+
+--- Python code to decode in "utf-8" a string encoded in 'ISO-8859-1'
+def encode_file(column_name):
+    _encoding = 'ISO-8859-1'
+    return str(column_name).encode(_encoding, 'ignore').decode("utf-8", 'ignore')
+
+--- Python code to remove all empty string that surrounds a string
+def remove_space(string_text):
+    return str(string_text).strip()
+	
+--- Python code to remove comma from a string
+def remove_coma(string_text):
+    return str(string_text).replace(',', ' ')
+
+--- Python code to split that dataFrame in two on a criteria basis
+# Let us assume we have a dataFrame with some rows containing double quote and we want to split the dataFrame in two: rows containing double quote and not
+def check_if_contains_double_quote(string_text):
+    if '"' in str(string_text):
+        return True
+    else:
+        return False
+dataFrameOrgWithoutDoubleQuote = dataFrameMerged[dataFrameMerged["OrganizationName"].apply(check_if_contains_double_quote)]		
+dataFrameOrgWithDoubleQuote = dataFrameMerged[~dataFrameMerged["OrganizationName"].apply(check_if_contains_double_quote)]
+
+--- Python code to remove rows having no vowels contained in dataFrame column value using regular expression
+def remove_orgName_with_no_vowels(check_O_N):
+    if bool(re.match('^[^aeyiuoAEYIUO]+$', str(check_O_N))):
+        return False
+    else:
+        return True
+
+--- Python code to count duplicate records 
+# Reference column is 'OrganizationName', 'dataFrame_' is the dataFrame
+print("Detecting duplicate records")
+df = dataFrame_.apply(lambda x: x.duplicated()).sum()
+print("Detected number of duplicate in OrganizationName Column: ", df['OrganizationName'])
+
+--- Python code to drop duplicated values under a dataFrame
+dataFrame = dataFrameWithoutSpecialCharacter.drop_duplicates()
+
+--- Python code: Split a string and check if each substring is part od English dictionary
+def Convert(string):
+    li = list(string.split(" "))
+    return li
+
+
+def get_rid_of_fake_org_names(check_O_N):
+    d = en.Dict("en_US")
+    new_org_name = Convert(str(check_O_N))
+    temp = 0
+    for item in new_org_name:
+        if item != "" and d.check(item):
+            temp = 1
+            break
+    if temp == 1:
+        return True
+    else:
+        return False
+
+--- Python code to check if a character s ascii
+def troubleshoot_ascii_characters(string_text):
+    if str(string_text).isascii():
+        return True
+    else:
+        return False
+
+--- Python code to remove anti slash from string
+def remove_anti_slash_xa0_from_string(text_value):
+    return str(text_value).replace(r"\xa0", " ")
+
+--- Python code to check if a string contains only letters and number
+def containsLetterAndNumber(input):
+    if input.isalnum() and not input.isalpha() and not input.isdigit():
+        return True
+    else:
+        return False
+
+--- Python code to find the number of upper and lower case letter in a string and check if string is part of english dictionary
+def case_counter(text_string):
+    d = en.Dict("en_US")
+    checkup = 0
+    double_check = 0
+    for item in str(text_string).split():
+        lower = 0
+        upper = 0
+        for char in item:
+            if char.islower():
+                lower = lower + 1
+            elif char.isupper():
+                upper = upper + 1
+            if d.check(item):
+                double_check = 1
+        if upper >= 2 and lower >= 1:
+            checkup = 1
+            break
+        else:
+            checkup = 0
+
+    if checkup == 1 and double_check == 0:
+        return True
+    else:
+        return False
+
+def case_counter_1(text_string):
+    checkup = 0
+    for item in str(text_string).split():
+        lower = 0
+        upper = 0
+        for char in item:
+            if char.islower():
+                lower = lower + 1
+            elif char.isupper():
+                upper = upper + 1
+        if upper >= 2 and lower >= 1:
+            checkup = 1
+            break
+        else:
+            checkup = 0
+
+    if checkup == 1:
+        return True
+    else:
+        return False
+		
+--- Python code to specify the dtype of excel columns we are want to read with pandas
+csv_file_path = "J:\\1_Ren21\\contactImport1\\Contacts.csv"
+dataType = {
+    'RecordId': str,
+    'Salutation': str,
+    'FirstName': str,
+    'LastName': str,
+    'Organization': str,
+    'Role': str,
+	}
+dataFrame = pd.read_csv(csv_file_path, sep=',', encoding='utf-8', dtype=dataType, skipinitialspace=True)
+
+--- Python code to explode data from a column
+# We have a dataFrame with Email column sometimes containing multiple emails separated by a semi column
+# We want each email to be on a single rows
+# First step is to transform semi column separated emails into a list
+def tansformStringEmailInList(string_email):
+    return str(string_email).split(';')
+dataFrame["EmailAddress"] = dataFrame["EmailAddress"].apply(tansformStringEmailInList)
+# Next we can apply the explode() function
+DataFrameExploded = dataFrame.explode('EmailAddress')
+
+--- Python code to remove repetitive items in all rows
+# We first define the list of dataFrame columns
+list_of_columns = ['RecordId', 'Salutation', 'FirstName', 'LastName', 'Organization', 'Role']
+for col in list_of_columns:
+    dataFrameMerged[col] = dataFrameMerged[col].str.split(", ").map(set).str.join("| ")
+
+```
