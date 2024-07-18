@@ -1955,6 +1955,345 @@ organization_col_list = df["Organization"].values.tolist()
 dataFrame = dataFrame.astype(str)
 ```
 
+*Check if ascii character*
+
+```
+def troubleshoot_ascii_characters(string_text):
+ if str(string_text).isascii():
+ return True
+ else:
+ return False
+```
+
+*Check if a string is a mix of letter(s) and number(s)*
+```
+def containsLetterAndNumber(input):
+ if input.isalnum() and not input.isalpha() and not input.isdigit():
+ return True
+ else:
+ return False
+```
+
+*Finding the number of upper- and lower-case letter in a string*
+```
+def case_counter(text_string):
+ checkup = 0
+ for item in str(text_string).split():
+ lower = 0
+ upper = 0
+ for char in item:
+ if char.islower():
+ lower = lower + 1
+ elif char.isupper():
+ upper = upper + 1
+ if upper >= 2 and lower >= 1:
+ checkup = 1
+ break
+ else:
+ checkup = 0
+ if checkup == 1:
+ return True
+ else:
+ return False
+```
+
+*From list of strings to list of sets*
+```
+def from_string_list_to_string_set(my_list):
+ final_list = []
+ for item_list in my_list:
+ item_list = str(item_list).replace(' ', '')
+ final_list.append(set(item_list.split('|')))
+ return final_list
+```
+
+*Remove all space from string using regex*
+```
+import re
+def remove_all_space(string_text):
+ return re.sub(r'\s', '', str(string_text))
+```
+
+*Email validator with regex*
+```
+import re
+regex = r'^(?:\S+@\S+\.\S+)(?:\s*,\s*\S+@\S+\.\S+)*\b'
+def email_validator(email):
+ if re.fullmatch(regex, str(email)):
+ return True
+ else:
+ return False
+```
+
+*Count duplicate records in dataframe column*
+```
+import pandas as pd
+df = 
+pd.read_excel("J:\\1_Ren21\\Final..Final\\organization.import\\test_org.xls
+x", sheet_name='Sheet1')
+df_count = df.apply(lambda x: x.duplicated()).sum()
+print(" Detected number of duplicate : ", df_count['Email'])
+```
+
+*Get dataframe of duplicate records*
+```
+ids = df["lowerEmail"]
+df[ids.isin(ids[ids.duplicated()])].sort_values("lowerEmail")
+df_4_duplicates = pd.concat(g for _, g in df.groupby("lowerEmail") if 
+len(g) > 1)
+df_4_duplicates.to_excel("J:\\1_Ren21\\Final..Final\\contact.import\\df_4_d
+uplicates.xlsx", index=False)
+```
+
+*Merging duplicated records*
+```
+import pandas as pd
+df = pd.read_excel(
+ "J:\\1_Ren21\\Final..Final\\organization.import\\test_org.xlsx",
+ sheet_name='Sheet1')
+dataFrameMerged = df.groupby(['Email']).agg(
+ {
+ 'Email': ' ; '.join,
+ 'City': ' ; '.join,
+ 'Country': ' ; '.join,
+ 'Organization': ' ; '.join
+ }).reset_index(drop=True)
+print(dataFrameMerged)
+```
+
+*Removing specific string from text*
+```
+def get_rid_of_nan(string_text):
+ if (string_text is not None) and ('nan' in string_text.split()):
+ new_list = str(string_text).replace(' ', '').split('|')
+ for item in new_list:
+ if item == 'nan':
+ index = new_list.index(item)
+ new_list[index] = ''
+ if (' '.join(new_list)).strip() is not None:
+ return (' '.join(new_list)).strip()
+ else:
+ return ''
+ else:
+ return string_text
+```
+
+*Converting txt file into list*
+```
+def open_file_and_convert_in_list(file_path):
+ f1 = open(file_path, encoding="utf8")
+ g1 = f1.read()
+ h1 = g1.split(',') # turning the file into list
+ h1[-1] = h1[-1].strip()
+ h1 = [x.strip(" ") for x in h1]
+ return h1
+```
+
+*Replacing fake record in a dataframe*
+Let us assume we have such a column in a dataframe
+OtherAddressCountry
+JMKBapbWfUtQHNLk| WsSOlAMLU
+7FEAUYu4aGAs0
+Kansas City
+R3GaqWmH
+nCMdrxsVfYZHXRFv| wuvhYGgmPR
+
+We want to define in a text file different values we want to get rid of.
+- First step is to add values we want to remove in a file (text or Excel or csv)
+JMKBapbWfUtQHNLk| WsSOlAMLU, 7FEAUYu4aGAs0, R3GaqWmH, nCMdrxsVfYZHXRFv| wuvhYGgmPR
+- Next, we convert text file into list
+- Next, we should convert list into set
+- Then we add another function to do the final job
+
+```
+import pandas as pd
+path = "J:\\1_Ren21\\Final..Final\\contact.import\\testing_file.txt"
+path2 = "J:\\1_Ren21\\Final..Final\\contact.import\\test.xlsx"
+df = pd.read_excel(path2)
+def open_file_and_convert_in_list(file_path):
+ f1 = open(file_path, encoding="utf8")
+ g1 = f1.read()
+ h1 = g1.split(',') # turning the file into list
+ h1[-1] = h1[-1].strip()
+ h1 = [x.strip(" ") for x in h1]
+ return h1
+def convert_list_into_set(my_list):
+ final_list = []
+ for item_list in my_list:
+ item_list = str(item_list).replace(' ', '')
+ final_list.append(set(item_list.split('|')))
+ return final_list
+def replace_rows_with_fake_records_by_empty(url_string):
+ new_url_string = str(url_string).replace(' ', '')
+ set_url_string = set(new_url_string.split('|'))
+ if set_url_string in 
+convert_list_into_set(open_file_and_convert_in_list(path)):
+ return ''
+ else:
+ return str(url_string)
+df['OtherAddressCountry'] = 
+df['OtherAddressCountry'].apply(replace_rows_with_fake_records_by_empty)
+print(df)
+```
+
+*Remove repetitive substring in a global global string*
+```
+def check_same_value_in_list(string_text):
+ check_list = str(string_text).split('|')
+ new_list = str(string_text).replace(' ', '').split('|')
+ if new_list.count(new_list[0]) == len(new_list):
+ return check_list[0]
+ else:
+ return string_text
+```
+
+*Lower case a string text*
+```
+def lower_case(string_email):
+ if str(string_email) != '':
+ return str(string_email).lower()
+```
+
+
+*Partially print dataframe column*
+```
+print(df['lowerEmail'].head(5))
+```
+
+*Take one occurrence of a text with repeated values*
+```
+def take_one_value(text):
+ list_items = str(text).split()
+ return list_items[0].strip()
+```
+
+*Reformat a string having multiple separators*
+```
+def reformat_tag(tag):
+ new_tag = str(tag).replace('|', '$')
+ new_tag1 = new_tag.replace(' ', '')
+ list_tag = new_tag1.split('$')
+ set_tag = set(list_tag)
+ # convert Set to String
+ final_tag = '$'.join(set_tag)
+ final_tag1 = final_tag.replace('$$', '$')
+ return final_tag1
+```
+
+*Counting number of occurrence of a string under a dataframe column*
+```
+utilities_count1 = df['ContactTag_Merged_Id'].str.contains('None').sum()
+if utilities_count1 > 0:
+ print("There are {m} none".format(m=utilities_count1), 'under 
+ContactTag_Merged_Id')
+```
+
+*Convert dataframe column into str*
+```
+df['ContactTag1'] = df['ContactTag1'].astype(str)
+df['ContactTag2'] = df['ContactTag2'].astype(str)
+df['ContactTag3'] = df['ContactTag3'].astype(str)
+df['ContactTag4'] = df['ContactTag4'].astype(str)
+df['ContactTag5'] = df['ContactTag5'].astype(str)
+```
+
+*Merge dataframe column using a separator*
+```
+df['ContactTag_Merged'] = df[
+ ['ContactTag1', 'ContactTag2', 'ContactTag3', 'ContactTag4', 'ContactTag5', 'ContactTag6', 'ContactTag7', 'ContactTag8', 'ContactTag9']].apply(lambda x:'*'.join(x.dropna()), axis=1)
+```
+
+*Reformat a string with multiple separators*
+```
+def split_tags(tag_string):
+ reformated_string0 = str(tag_string).replace('*nan', 
+'').replace('nan*', '')
+ reformated_string = str(reformated_string0).replace('|', '*')
+ reformated_string2 = reformated_string.split('*')
+ stripped = list(map(str.strip, reformated_string2))
+ final_list = list(dict.fromkeys(stripped))
+ final_string = '$'.join(str(e) for e in final_list)
+ return final_string
+```
+
+*Dynamically split dataframe column using a string separator*
+Description: We have a dataframe with a column having values like 
+“2773$323233$4433$43344$43349$88879”
+We want to get each value from the string to be in a single column
+```
+# split column into multiple columns by delimiter
+df2 = df['ContactTag_Merged'].str.split('$', expand=True)
+df2.columns = ['Tag{}'.format(x+1) for x in df2.columns]
+df = df.join(df2)
+```
+
+*Build a dictionary to replace string values by other values*
+```
+tag_list = ['Web Contact', 'IREC_Delhi', 'GDPR_InfoGen','Location_Nicaragua', 'Topic_CCUS$GSR_Topic_ETechnologies', 'GSR_Topic_Cost', ...'']
+```
+We create a list of numeric values
+```
+tag_values = list(range(3000, 3465))
+```
+```
+str_list = list(filter(None, tag_list))
+tag_dict = dict(zip(sorted(str_list), tag_values))
+```
+```
+def set_tag_id_in_contact(item_name):
+ long_string = str(item_name).split('$')
+ for i in range(len(long_string)):
+ if str(long_string[i]).strip() != '':
+ long_string[i] = tag_dict.get(str(long_string[i]).strip())
+ reformed_string = '$'.join(map(str, long_string))
+ return reformed_string
+```
+```
+df['ContactTag_Merged_Id'] = df['ContactTag_Merged'].apply(set_tag_id_in_contact)
+```
+
+*Filter dataframe on basis of column value*
+```
+df1 = df[df.ContactTag_Merged_Id == "topic_renewable_energy"]
+print(len(df1))
+```
+
+*Replace empty string by np.nan*
+```
+Replace any empty string in the OrganizationName column of the dataframe with NAN
+dataFrame['OrganizationName'].replace(' ', np.nan, inplace=True)
+```
+
+*Drop dataframe rows having NA values*
+```
+dataFrame.dropna(subset=['OrganizationName'], inplace=True)
+```
+
+*Check if a string is digit*
+```
+def check_if_string_is_digit(string_number):
+ if str(string_number).isdigit():
+ return True
+ else:
+ return False
+```
+
+*Get string with no vowels*
+```
+def remove_orgName_with_no_vowels(check_O_N):
+ if bool(re.match('^[^aeyiuoAEYIUO]+$', str(check_O_N))):
+ return False
+ else:
+ return True
+```
+
+*Dropping entirely duplicate records*
+```
+dataFrameFreFromCompletelyDuplicate = 
+dataFrameWithoutSpecialCharacter.drop_duplicates()
+```
+
+
 ### Section 2
 
 ```
