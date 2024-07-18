@@ -1806,7 +1806,7 @@ This code helps the agency to easily count number of records under Account and C
 | - | - |
 |---|---|
 | ![](/images/rec_count1.png) | ![](/images/rec_count2.png)|
-
+| ![](/images/rec_count3.png) | ![](/images/rec_count4.png)|
 ```
 function entityRecordCount() {
     // getGlobalContext() method provides access to the global context
