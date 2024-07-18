@@ -1128,7 +1128,38 @@ namespace Linking_Organization
 
 ### Console Application codes
 
-#### C# Code for data migration
+#### C# Codes for data migration
+
+##### Program.cs
+
+```
+using System;
+using System.Collections.Generic;
+using Microsoft.Crm.Sdk.Messages;
+using Microsoft.Xrm.Sdk;
+using Microsoft.Xrm.Tooling.Connector;
+using OfficeOpenXml;
+using OfficeOpenXml.Core.ExcelPackage;
+using Serilog;
+
+namespace Dynamics365ConsoleApp
+    {
+    class Program
+        {
+        static void Main(string[] args)
+            {
+            //Create object of ImportFromExcelFile class.
+            ImportFromExcelFile importFromExcelFile = new ImportFromExcelFile();
+            importFromExcelFile.ImportFile();
+
+            Console.WriteLine("Data import completed.");
+            }
+
+        }
+    }
+```
+
+##### ImportFromExcelFile.cs
 
 ```
 using System;
