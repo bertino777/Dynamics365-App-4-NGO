@@ -1860,6 +1860,56 @@ function entityRecordCount() {
 
 ## Python codes for data transformation
 
+### Section 1
+
+*Read Excel files*
+```
+import pandas as pd
+df = pd.read_excel( 
+"J:\\1_Ren21\\Final..Final\\organization.import\\organizations_ren21___28_12_2023_10-58_am.xlsx", sheet_name='Sheet1')
+```
+
+*Read CSV file by specifying columns data types*
+```
+#Csv file path
+excel_file_path = "J:\\1_Ren21\\contactImport1\\Contacts.csv"
+
+dataType = {
+ 'RecordId': str,
+ 'Salutation': str,
+ 'FirstName': str,
+ 'LastName': str,
+ 'Organization': str,
+ 'Role': str,
+ 'Background': str
+}
+
+dataFrame = pd.read_csv(excel_file_path, sep=',', encoding='utf-8', 
+dtype=dataType, skipinitialspace=True)
+
+```
+
+*Read text file*
+```
+f1 = open(file_path, encoding="utf8")
+g1 = f1.read()
+```
+
+*Get size of a dataframe*
+| Organization | City | Country | Email |
+|---|---|---|---|
+|ABC CONSULTING | Yaounde| Cameroon| yvontjs@gmail.com| 
+|ARIK AIR | Lagos| Nigeria| bertino@yahoo.com| 
+|CONGELCAM  |  Doula | Cameroon| yvontjs@gmail.com| 
+```
+import pandas as pd
+df = pd.read_excel("J:\\1_Ren21\\Final..Final\\organization.import\\test_org.xlsx", sheet_name='Sheet1')
+print(len(df))
+```
+Output: 3
+
+### Section 2
+
 ```
 --- Python code to read a csv file using pandas
 
