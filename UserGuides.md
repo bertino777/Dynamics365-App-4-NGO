@@ -11,7 +11,7 @@ Dashboards in Dynamics 365 Sales provide an overview of actionable business data
 Any user can build his own dashboard and share it to other users to give them access to it. 
 
 ##### Dashboard overview
-
+![](images/fug1.png) 
 
 
 ## Technical user guide
