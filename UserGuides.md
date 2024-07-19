@@ -24,4 +24,12 @@ For instance, after creating a Campaign, the marketing manager can define planni
 Let us create a Task activity type (you can create any other type as well, like Email, Appointment, Phone call …). 
 ![](images/fug2.png) 
 
+### Constituents 
+
+#### Create a new Organization
+![](images/fug3.png) 
+
+#### Create a new Contact
+
+
 ## Technical user guide
