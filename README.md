@@ -170,3 +170,8 @@ Dynamics 365 Sales Application on 3 environments (DEV, UAT and PROD)
 *Click on the icon to see security management*
 
 [<img alt ="ALM" width="px" height="60px" src="images/security.png" />](https://github.com/bertino777/Dynamics365-App-4-NGO/blob/main/Security.md)
+
+# User guides
+*Click on the icon to see fonctional and technical documents*
+
+[<img alt ="ALM" width="px" height="60px" src="images/userguide.png" />](https://github.com/bertino777/Dynamics365-App-4-NGO/blob/main/UserGuides)
