@@ -152,17 +152,17 @@ Dynamics 365 Sales Application on 3 environments (DEV, UAT and PROD)
 [<img alt ="ALM" width="px" height="60px" src="images/automation.png" />](https://github.com/bertino777/Dynamics365-App-4-NGO/blob/main/Automations.md)
 
 # C Sharp plug-ins
-*Click on the icon to see automations*
+*Click on the icon to see C sharp plu-in codes*
 
 [<img alt ="ALM" width="px" height="60px" src="images/c_sharp_plugin.png" />](https://github.com/bertino777/Dynamics365-App-4-NGO/blob/main/CSharpPlugIns.md)
 
 # Data migration Console App
-*Click on the icon to see automations*
+*Click on the icon to see Console Application code used for data migration*
 
-[<img alt ="ALM" width="px" height="60px" src="images/automation.png" />](https://github.com/bertino777/Dynamics365-App-4-NGO/blob/main/DataMigrationWithConsoleApp.md)
+[<img alt ="ALM" width="px" height="60px" src="images/data_migration.png" />](https://github.com/bertino777/Dynamics365-App-4-NGO/blob/main/DataMigrationWithConsoleApp.md)
 
 # Python codes
-*Click on the icon to see automations*
+*Click on the icon to see some python codes used for data transformation*
 
 [<img alt ="ALM" width="px" height="60px" src="images/automation.png" />](https://github.com/bertino777/Dynamics365-App-4-NGO/blob/main/PythonCodes.md)
 
