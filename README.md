@@ -141,11 +141,6 @@ Dynamics 365 Sales Application on 3 environments (DEV, UAT and PROD)
 
 ![](images/time.png) 
 
-# Application LifeCycle Management (ALM)
-*Click on the icon to see the ALM*
-
-[<img alt ="ALM" width="px" height="60px" src="images/alm_icon.png" />](https://github.com/bertino777/Dynamics365-App-4-NGO/blob/main/ALM.md)
-
 # Power automate flows
 *Click on the icon to see automations done with Microsoft Power Automate*
 
