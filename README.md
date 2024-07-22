@@ -154,7 +154,7 @@ Dynamics 365 Sales Application on 3 environments (DEV, UAT and PROD)
 # C Sharp plug-ins
 *Click on the icon to see automations*
 
-[<img alt ="ALM" width="px" height="60px" src="images/automation.png" />](https://github.com/bertino777/Dynamics365-App-4-NGO/blob/main/Automations.md)
+[<img alt ="ALM" width="px" height="60px" src="images/automation.png" />](https://github.com/bertino777/Dynamics365-App-4-NGO/blob/main/CSharpPlugIns.md)
 
 # Data migration Console App
 *Click on the icon to see automations*
