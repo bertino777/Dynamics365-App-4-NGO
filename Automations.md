@@ -1,9 +1,5 @@
 # Automations with Microsoft Power Automate 
 
-As part of automations, Power automate flows and plug-ins have been built.
-
-## Power automate flows
-
 ![](images/flow_zoom.png) 
 
 ### 1. Create Zoom Meeting
