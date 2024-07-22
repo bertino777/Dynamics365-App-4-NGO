@@ -141,35 +141,31 @@ Dynamics 365 Sales Application on 3 environments (DEV, UAT and PROD)
 
 ![](images/time.png) 
 
-# Data Modeling
-*Click on the icon to see the Data Modeling*
-
-[<img alt ="Design view" width="px" height="60px" src="images/data_modeling.png" />](https://github.com/bertino777/Dynamics365-App-4-NGO/blob/main/DataModeling.md)
-
-# Design view
-*Click on the icon to see the Design view*
-
-[<img alt ="Design view" width="px" height="60px" src="images/design_view.png" />](https://github.com/bertino777/Dynamics365-App-4-NGO/blob/main/DesignView.md)
-
 # Application LifeCycle Management (ALM)
 *Click on the icon to see the ALM*
 
 [<img alt ="ALM" width="px" height="60px" src="images/alm_icon.png" />](https://github.com/bertino777/Dynamics365-App-4-NGO/blob/main/ALM.md)
 
-# Solution Development and Deployment
-*Click on the icon to see the solution development and deployment*
-
-[<img alt ="ALM" width="px" height="60px" src="images/sol_dev_dep.png" />](https://github.com/bertino777/Dynamics365-App-4-NGO/blob/main/SolutionDevDepl.md)
-
-# Automations
+# Power automate flows
 *Click on the icon to see automations*
 
 [<img alt ="ALM" width="px" height="60px" src="images/automation.png" />](https://github.com/bertino777/Dynamics365-App-4-NGO/blob/main/Automations.md)
 
-# Security
-*Click on the icon to see security management*
+# C Sharp plug-ins
+*Click on the icon to see automations*
 
-[<img alt ="ALM" width="px" height="60px" src="images/security.png" />](https://github.com/bertino777/Dynamics365-App-4-NGO/blob/main/Security.md)
+[<img alt ="ALM" width="px" height="60px" src="images/automation.png" />](https://github.com/bertino777/Dynamics365-App-4-NGO/blob/main/CSharpPlugIns.md)
+
+# Data migration Console App
+*Click on the icon to see automations*
+
+[<img alt ="ALM" width="px" height="60px" src="images/automation.png" />](https://github.com/bertino777/Dynamics365-App-4-NGO/blob/main/Automations.md)
+
+# Python codes
+*Click on the icon to see automations*
+
+[<img alt ="ALM" width="px" height="60px" src="images/automation.png" />](https://github.com/bertino777/Dynamics365-App-4-NGO/blob/main/Automations.md)
+
 
 # User guides
 *Click on the icon to see fonctional and technical documents*
