@@ -606,3 +606,147 @@ You can go under the **Send** Tab and add a new **email template**, generate you
 
 
 ## Technical user guide
+
+# Introduction
+
+All customizations are to be done in the development environment, tested in user acceptance test environment and if all is okay pushed in the production environment; you must never make customization in the production environment directly.
+
+# Adding a new field on the user interface
+
+Let us assume we want to add a new field on the contact form specifically on the Summary Tab.
+
+The text field will be called “Notes” and it will be added under the Ren21 Account manager field, see the below screenshot.
+
+
+Follow the below steps to add the field:
+
+## II.1) Go in the development environment
+
+From Power app designer (_make.powerapps.com_)
+
+
+## II.2) Go in the right solution
+
+The solution where all customization will be done is “Ren21FundraisingandEngagement”.
+
+
+
+## II.3) Add the field on the Contact entity
+
+
+
+
+
+
+
+The field is now created.
+
+Next step is to add the field on the form.
+
+## II.4) Add the field on the form
+
+
+The right form is “Fundraising: Contact REN21”
+
+
+
+
+
+## II.5) Refresh the app from the development to see changes
+
+Use shortcut (CTRL + F5) to empty the cache
+
+You can do it twice or trice, until you see the change.
+
+
+Next step is to export the solution from development environment to import it in the user acceptance test environment.
+
+## II.6) Exporting the solution
+
+
+
+
+
+
+
+The solution is exported as Zip file
+
+
+Next step will be to import that Zip file in the user acceptance test (for testing purpose), and if okay import that file in the production environment.
+
+## II.7) Importing the solution
+
+
+
+
+
+
+Once the solution is imported, you will be able to see the new field.
+
+# Adding a new value to an option set
+
+We will add a new value (“Contractor)” to the contribution ro choice values
+
+Follow steps one and two from previous section to go in the right environment and select the correct solution.
+
+
+
+
+
+Follow steps six and seven of the previous section for exporting/importing the solution
+
+# Create power automate flow
+
+We will build a very simple flow and explain all the steps in details.
+
+This is what we want to automate: Whenever a contact is updated, and email notification must be sent to a specific email address (“<thomas.andre@ren21.net>”).
+
+## IV.1) Go in the power automate flow designer
+
+From Power automate designer (make.powerautomate.com)
+
+
+## IV.2) Go in the right solution
+
+The solution where all customization will be done is “Ren21FundraisingandEngagement”.
+
+
+
+## IV.3) Create the flow
+
+
+
+
+
+
+
+
+
+
+
+
+
+## IV.4) Test the flow
+
+
+
+
+
+Go back and see the flow execution output
+
+
+The above shows that all is working well, the email has been well sent.
+
+Next step is to export the solution and import it in the user acceptance test environment still for testing purpose; when okay, the solution will be imported in the production environment.
+
+Refer to section II) to see how to export/import solution.
+
+# Import data using Excel templates
+
+The below will show how to import Roles in Project record, the logic is the same for importing other kind of data.
+
+
+
+
+
+You can double check the column mapping by clicking “Review Mapping” button.
