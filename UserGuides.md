@@ -699,7 +699,7 @@ Follow steps six and seven of the previous section for exporting/importing the s
 
 We will build a very simple flow and explain all the steps in details.
 
-This is what we want to automate: Whenever a contact is updated, and email notification must be sent to a specific email address (“<thomas.andre@ren21.net>”).
+This is what we want to automate: Whenever a contact is updated, and email notification must be sent to a specific email address (“<>”).
 
 ## IV.1) Go in the power automate flow designer
 
